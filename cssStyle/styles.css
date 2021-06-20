@@ -1,0 +1,112 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(to top, #6565e7, #af67e9);
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer picture, .mainContainer img {
+  display: none;
+}
+.mainContainer .faqComponent {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 110rem;
+  background-color: #e7e7e9;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+.mainContainer .faqComponent .questionsContainer .title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.mainContainer .faqComponent .questionsContainer .questionList {
+  list-style: none;
+  width: 34rem;
+}
+.mainContainer .faqComponent .questionsContainer .questionList .questions {
+  border-bottom: 1px solid #787887;
+  padding: 2rem 0;
+}
+.mainContainer .faqComponent .questionsContainer .questionList .questions h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: 400;
+  color: #1d1e35;
+}
+.mainContainer .faqComponent .questionsContainer .questionList .questions h2:hover {
+  color: #f47c57;
+  cursor: pointer;
+}
+.mainContainer .faqComponent .questionsContainer .questionList .questions .arrowImage {
+  display: inline-block;
+  height: 1.4rem;
+  width: 1.4rem;
+  background-image: url(/images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.4s;
+}
+.mainContainer .faqComponent .questionsContainer .questionList .questions .answer {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  visibility: hidden;
+  display: block;
+  color: #e7e7e9;
+  transition: all 0.5s ease-in-out;
+  max-height: 0;
+}
+.mainContainer .faqComponent .questionsContainer .questionList .questionsOpen h2 {
+  font-weight: bold;
+}
+.mainContainer .faqComponent .questionsContainer .questionList .questionsOpen .arrowImage {
+  transform: rotate(180deg);
+}
+.mainContainer .faqComponent .questionsContainer .questionList .questionsOpen .answer {
+  max-height: 500px;
+  visibility: visible;
+  color: #787887;
+  padding-top: 1rem;
+}
+
+.attribution {
+  padding: 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+  position: relative;
+  color: #e7e7e9;
+}
+.attribution a {
+  text-decoration: none;
+  color: #e7e7e9;
+}
+.attribution a:hover {
+  color: #f47c57;
+}
+
+/*# sourceMappingURL=styles.css.map */

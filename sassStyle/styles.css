@@ -1,0 +1,80 @@
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainContainer picture, .mainContainer img {
+  display: none;
+}
+
+.mainContainer .questionsContainer .title {
+  font-size: 3rem;
+}
+
+.mainContainer .questionsContainer .questionList {
+  list-style: none;
+}
+
+.mainContainer .questionsContainer .questionList .questions h2 {
+  display: inline-block;
+}
+
+.mainContainer .questionsContainer .questionList .questions .arrowImage {
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.2rem;
+  background-image: url(/images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.attribution {
+  padding: 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+  position: relative;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--bg-orange);
+}
+
+.attribution a:hover {
+  color: var(--bg-cyan);
+}
+/*# sourceMappingURL=styles.css.map */
